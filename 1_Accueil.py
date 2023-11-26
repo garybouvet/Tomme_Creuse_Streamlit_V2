@@ -28,11 +28,10 @@ st.markdown(
         align-items: center;
         text-align: center;
     }}
-    .custom-heading {{
-        font-family: "Helvetica Neue", sans-serif;
-        font-size: 24px;
-        font-weight: bold;
+    .custom-list {{
+        text-align: left;
         margin-top: 10px;
+        line-height: 1.2;  /* Adjust line spacing as needed */
     }}
     </style>
     """,
@@ -44,9 +43,11 @@ st.markdown(
     f"""
     <div class="centered-image">
         <img src="data:image/png;base64,{resized_logo_base64}" alt="Tomme Creuse - Mission possible">
-        <h1 class="custom-heading">Collecte et nettoyage de données depuis IMDB</h1>
-        <h1 class="custom-heading">Enrichissement automatisé à partir de TMDB via API</h1>
-        <h1 class="custom-heading">Développement d'un moteur de Machine Learning (Cosine similarity) pour des recommandations de films</h1>
+        <ul class="custom-list">
+            <li>• Collecte et nettoyage de données depuis IMDB</li>
+            <li>• Enrichissement automatisé à partir de TMDB via API</li>
+            <li>• Développement d'un moteur de Machine Learning (Cosine similarity) pour des recommandations de films</li>
+        </ul>
     </div>
     """,
     unsafe_allow_html=True
