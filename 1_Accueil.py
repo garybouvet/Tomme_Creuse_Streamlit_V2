@@ -30,8 +30,9 @@ st.markdown(
     }}
     .custom-list {{
         text-align: left;
-        margin-top: 10px;
+        margin-top: 40px;
         line-height: 1.2;  /* Adjust line spacing as needed */
+        font-size: 18px;  /* Adjust font size as needed */
     }}
     </style>
     """,
@@ -44,9 +45,9 @@ st.markdown(
     <div class="centered-image">
         <img src="data:image/png;base64,{resized_logo_base64}" alt="Tomme Creuse - Mission possible">
         <ul class="custom-list">
-            <li>• Collecte et nettoyage de données depuis IMDB</li>
-            <li>• Enrichissement automatisé à partir de TMDB via API</li>
-            <li>• Développement d'un moteur de Machine Learning (Cosine similarity) pour des recommandations de films</li>
+            <li> Collecte et nettoyage de données depuis IMDB</li>
+            <li> Enrichissement automatisé à partir de TMDB via API</li>
+            <li> Développement d'un moteur de Machine Learning (Cosine similarity) pour des recommandations de films</li>
         </ul>
     </div>
     """,
