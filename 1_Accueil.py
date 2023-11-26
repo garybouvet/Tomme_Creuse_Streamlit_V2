@@ -1,34 +1,19 @@
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(
     page_title="MGC Cinéma",
     layout="wide"
 )
 
-logo_path = "./Logo/MGC_Cinema_Logo.png"
+logo_path = "./Logo/MGC_Cinema_Logo.png"  
 
-# Center the logo
-st.markdown(
-    """
-    <style>
-    .centered-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# Load the logo image
+logo_image = Image.open(logo_path)
 
-# Display the centered logo at its original size
-st.markdown(
-    f"""
-    <div class="centered-image">
-        <img src="{logo_path}">
-        <h1 style="margin-top: 20px;">MGC - Cinéma</h1>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# Create 3 columns with the middle column being wider to center the logo
+col1, col2, col3 = st.columns([1, 6, 1])
+
+# Use col2 to center the logo
+with col2:
+    st.image(logo_image, use_column_width=True)
