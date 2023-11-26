@@ -22,11 +22,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Display the centered logo at its original size without text
+# Display the centered logo at its original size
 st.markdown(
     f"""
     <div class="centered-image">
-        <img src="{logo_path}" alt="Tomme Creuse - Mission possible">
+        <img src="{logo_path}">
+        <h1 style="margin-top: 20px;">MGC - Cinéma</h1>
     </div>
     """,
     unsafe_allow_html=True
