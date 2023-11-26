@@ -28,6 +28,12 @@ st.markdown(
         align-items: center;
         text-align: center;
     }}
+    .custom-heading {{
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+    }}
     </style>
     """,
     unsafe_allow_html=True
@@ -35,25 +41,13 @@ st.markdown(
 
 # Afficher le logo centré avec la description en dessous
 st.markdown(
-    <style>
-        .centered-image {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .custom-heading {
-            font-family: "Helvetica Neue", sans-serif;
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
-
+    f"""
     <div class="centered-image">
         <img src="data:image/png;base64,{resized_logo_base64}" alt="Tomme Creuse - Mission possible">
         <h1 class="custom-heading">Collecte et nettoyage de données depuis IMDB</h1>
         <h1 class="custom-heading">Enrichissement automatisé à partir de TMDB via API</h1>
         <h1 class="custom-heading">Développement d'un moteur de Machine Learning (Cosine similarity) pour des recommandations de films</h1>
     </div>
+    """,
+    unsafe_allow_html=True
+)
