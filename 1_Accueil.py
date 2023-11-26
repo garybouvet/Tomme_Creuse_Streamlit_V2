@@ -33,12 +33,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Afficher le logo centré avec les textes en dessous
+# Afficher le logo centré avec la description en dessous
 st.markdown(
     f"""
     <div class="centered-image">
         <img src="data:image/png;base64,{resized_logo_base64}" alt="Tomme Creuse - Mission possible">
-        <h1 style="margin-top: 20px;">MGC - Cinéma</h1>
+        <h1 style="margin-top: 40px;">Collecte et nettoyage de données depuis IMDB</h1>
+        <h1>Enrichissement automatisé à partir de TMDB via API</h1>
+        <h1>Développement d'un moteur de Machine Learning (Cosine similarity) pour des recommandations de films</h1>
     </div>
     """,
     unsafe_allow_html=True
