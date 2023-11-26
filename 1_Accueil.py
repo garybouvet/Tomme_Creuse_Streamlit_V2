@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 
 st.set_page_config(
-    page_title="Titre de votre application",
+    page_title="MGC Cinéma",
     layout="wide"
 )
 
@@ -38,8 +38,7 @@ st.markdown(
     f"""
     <div class="centered-image">
         <img src="data:image/png;base64,{resized_logo_base64}" alt="Tomme Creuse - Mission possible">
-        <h1 style="margin-top: 20px;">Tomme Creuse - Mission possible</h1>
-        <h2>MGC - Cinéma</h2>
+        <h1 style="margin-top: 20px;">MGC - Cinéma</h1>
     </div>
     """,
     unsafe_allow_html=True
